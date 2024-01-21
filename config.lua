@@ -4,8 +4,8 @@ Config = Config or {}
 -- These have to be a string thanks to how Convars are returned.
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 
-Config.Timeout = 30 * (60 * 2000)
-Config.RequiredCops = 100
+Config.Timeout = 60 * (60 * 1000)
+Config.RequiredCops = 6
 Config.JewelleryLocation = {
     ['coords'] = vector3(-630.5, -237.13, 38.08),
 }
@@ -53,21 +53,21 @@ Config.VitrineRewards = {
     [1] = {
         ['item'] = 'rolex',
         ['amount'] = {
-            ['min'] = 1,
+            ['min'] = 2,
             ['max'] = 4
         },
     },
     [2] = {
         ['item'] = 'diamond_ring',
         ['amount'] = {
-            ['min'] = 1,
+            ['min'] = 2,
             ['max'] = 4
         },
     },
     [3] = {
         ['item'] = 'goldchain',
         ['amount'] = {
-            ['min'] = 1,
+            ['min'] = 2,
             ['max'] = 4
         },
     },
