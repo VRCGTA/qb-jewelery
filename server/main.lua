@@ -51,8 +51,8 @@ end)
 RegisterNetEvent('qb-jewellery:server:vitrineReward', function(vitrineIndex)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local otherchance = math.random(1, 3)
-    local odd = math.random(1, 3)
+    local otherchance = math.random(1, 4)
+    local odd = math.random(1, 4)
     local cheating = false
 
     if Config.Locations[vitrineIndex] == nil or Config.Locations[vitrineIndex].isOpened ~= false then
