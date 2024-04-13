@@ -5,7 +5,7 @@ Config = Config or {}
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 
 Config.Timeout = 60 * (60 * 1000)
-Config.RequiredCops = 6
+Config.RequiredCops = exports['vrcgta-qb']:GetValue('JewelleryRequiredCops')
 Config.JewelleryLocation = {
     ['coords'] = vector3(-630.5, -237.13, 38.08),
 }
@@ -58,7 +58,7 @@ Config.VitrineRewards = {
         },
     },
     [2] = {
-        ['item'] = 'diamond_ring',
+        ['item'] = 'tenkgoldchain',
         ['amount'] = {
             ['min'] = 2,
             ['max'] = 4
