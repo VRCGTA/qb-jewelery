@@ -77,22 +77,22 @@ RegisterNetEvent('qb-jewellery:server:vitrineReward', function(vitrineIndex)
                 TriggerClientEvent('qb-jewellery:client:setVitrineState', -1, 'isOpened', true, vitrineIndex)
                 TriggerClientEvent('qb-jewellery:client:setVitrineState', -1, 'isBusy', false, vitrineIndex)
 
-                if otherchance == odd then
-                    local item = math.random(1, #Config.VitrineRewards)
-                    local amount = math.random(Config.VitrineRewards[item]['amount']['min'], Config.VitrineRewards[item]['amount']['max'])
-                    if Player.Functions.AddItem(Config.VitrineRewards[item]['item'], amount) then
-                        TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.VitrineRewards[item]['item']], 'add')
-                    else
-                        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.to_much'), 'error')
-                    end
+                -- if otherchance == odd then
+                local item = math.random(1, #Config.VitrineRewards)
+                local amount = math.random(Config.VitrineRewards[item]['amount']['min'], Config.VitrineRewards[item]['amount']['max'])
+                if Player.Functions.AddItem(Config.VitrineRewards[item]['item'], amount) then
+                    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.VitrineRewards[item]['item']], 'add')
                 else
-                    local amount = math.random(2, 4)
-                    if Player.Functions.AddItem('10kgoldchain', amount) then
-                        TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['10kgoldchain'], 'add')
-                    else
-                        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.to_much'), 'error')
-                    end
+                    TriggerClientEvent('QBCore:Notify', src, Lang:t('error.to_much'), 'error')
                 end
+                -- else
+                -- local amount = math.random(2, 4)
+                -- if Player.Functions.AddItem('tenkgoldchain', amount) then
+                --     TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['tenkgoldchain'], 'add')
+                -- else
+                --     TriggerClientEvent('QBCore:Notify', src, Lang:t('error.to_much'), 'error')
+                -- end
+                -- end
             else
                 cheating = true
             end

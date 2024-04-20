@@ -11,40 +11,37 @@ Config.JewelleryLocation = {
 }
 
 Config.WhitelistedWeapons = {
-    [`weapon_assaultrifle`] = {
-        ['timeOut'] = 10000
-    },
-    [`weapon_carbinerifle`] = {
-        ['timeOut'] = 10000
-    },
-    [`weapon_pumpshotgun`] = {
-        ['timeOut'] = 10000
-    },
-    [`weapon_sawnoffshotgun`] = {
-        ['timeOut'] = 10000
-    },
-    [`weapon_compactrifle`] = {
+    [`weapon_vintagepistol`] = {
         ['timeOut'] = 10000
     },
     [`weapon_microsmg`] = {
         ['timeOut'] = 10000
     },
-    [`weapon_autoshotgun`] = {
+    [`weapon_heavyshotgun`] = {
         ['timeOut'] = 10000
     },
-    [`weapon_pistol`] = {
+    [`weapon_assaultrifle`] = {
         ['timeOut'] = 10000
     },
-    [`weapon_pistol_mk2`] = {
+    [`weapon_mg`] = {
         ['timeOut'] = 10000
     },
-    [`weapon_combatpistol`] = {
+    [`weapon_sniperrifle`] = {
         ['timeOut'] = 10000
     },
-    [`weapon_appistol`] = {
+    [`weapon_dragon_katana_red`] = {
         ['timeOut'] = 10000
     },
-    [`weapon_pistol50`] = {
+    [`weapon_dragon_katana_blue`] = {
+        ['timeOut'] = 10000
+    },
+    [`weapon_dragon_katana_green`] = {
+        ['timeOut'] = 10000
+    },
+    [`weapon_dragon_katana_purple`] = {
+        ['timeOut'] = 10000
+    },
+    [`weapon_dragon_katana_yellow`] = {
         ['timeOut'] = 10000
     },
 }

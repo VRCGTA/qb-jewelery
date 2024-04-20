@@ -145,7 +145,7 @@ CreateThread(function()
                 heading = 40,
                 minZ = v.coords.z - 1,
                 maxZ = v.coords.z + 1,
-                debugPoly = false
+                debugPoly = true
             }, {
                 options = {
                     {
@@ -177,7 +177,7 @@ CreateThread(function()
                 heading = 40,
                 minZ = v.coords.z - 1,
                 maxZ = v.coords.z + 1,
-                debugPoly = false
+                debugPoly = true
             })
             boxZone:onPlayerInOut(function(isPointInside)
                 if isPointInside then
