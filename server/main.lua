@@ -68,7 +68,7 @@ RegisterNetEvent('qb-jewellery:server:vitrineReward', function(vitrineIndex)
     local plrCoords = GetEntityCoords(plrPed)
     local vitrineCoords = Config.Locations[vitrineIndex].coords
 
-    if cachedPoliceAmount[source] >= Config.RequiredCops then
+    if cachedPoliceAmount[source] >= Config.GetRequiredCops() then
         if plrPed then
             local dist = #(plrCoords - vitrineCoords)
             if dist <= 25.0 then

@@ -40,7 +40,7 @@ local function smashVitrine(k)
     end
 
     QBCore.Functions.TriggerCallback('qb-jewellery:server:getCops', function(cops)
-        if cops >= Config.RequiredCops then
+        if cops >= Config.GetRequiredCops() then
             local animDict = 'missheist_jewel'
             local animName = 'smash_case'
             local ped = PlayerPedId()
@@ -83,7 +83,7 @@ local function smashVitrine(k)
                 end
             end)
         else
-            QBCore.Functions.Notify(Lang:t('error.minimum_police', { value = Config.RequiredCops }), 'error')
+            QBCore.Functions.Notify(Lang:t('error.minimum_police', { value = Config.GetRequiredCops() }), 'error')
         end
     end)
 end

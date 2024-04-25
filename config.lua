@@ -5,7 +5,9 @@ Config = Config or {}
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 
 Config.Timeout = 60 * (60 * 1000)
-Config.RequiredCops = exports['vrcgta-qb']:GetValue('JewelleryRequiredCops')
+function Config.GetRequiredCops()
+    return GetConvarInt("vrcgta:jewelery:jeweleryRequiredCops", 999)
+end
 Config.JewelleryLocation = {
     ['coords'] = vector3(-630.5, -237.13, 38.08),
 }
