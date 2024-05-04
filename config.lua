@@ -4,7 +4,7 @@ Config = Config or {}
 -- These have to be a string thanks to how Convars are returned.
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 
-Config.Timeout = 60 * (60 * 1000)
+Config.Timeout = 3 * 60 * (60 * 1000)
 function Config.GetRequiredCops()
     return GetConvarInt("vrcgta:jewelery:jeweleryRequiredCops", 999)
 end
