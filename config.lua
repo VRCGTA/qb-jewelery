@@ -14,7 +14,7 @@ Config.JewelleryLocation = {
 
 Config.WhitelistedWeapons = {
     [`weapon_vintagepistol`] = {
-        ['timeOut'] = 10000
+        ['timeOut'] = 12000
     },
     [`weapon_microsmg`] = {
         ['timeOut'] = 10000
@@ -23,28 +23,28 @@ Config.WhitelistedWeapons = {
         ['timeOut'] = 10000
     },
     [`weapon_assaultrifle`] = {
-        ['timeOut'] = 10000
+        ['timeOut'] = 9000
     },
     [`weapon_mg`] = {
-        ['timeOut'] = 10000
+        ['timeOut'] = 9000
     },
     [`weapon_sniperrifle`] = {
         ['timeOut'] = 10000
     },
     [`weapon_dragon_katana_red`] = {
-        ['timeOut'] = 10000
+        ['timeOut'] = 12000
     },
     [`weapon_dragon_katana_blue`] = {
-        ['timeOut'] = 10000
+        ['timeOut'] = 12000
     },
     [`weapon_dragon_katana_green`] = {
-        ['timeOut'] = 10000
+        ['timeOut'] = 12000
     },
     [`weapon_dragon_katana_purple`] = {
-        ['timeOut'] = 10000
+        ['timeOut'] = 12000
     },
     [`weapon_dragon_katana_yellow`] = {
-        ['timeOut'] = 10000
+        ['timeOut'] = 12000
     },
 }
 
